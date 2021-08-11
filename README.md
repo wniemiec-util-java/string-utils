@@ -1,15 +1,15 @@
-![](https://github.com/wniemiec-util-data/string-utils/blob/master/docs/img/logo/logo.jpg)
+![](https://github.com/wniemiec-util-java/string-utils/blob/master/docs/img/logo/logo.jpg)
 
-<h1 align='center'>StringUtils</h1>
+<h1 align='center'>String Utils</h1>
 <p align='center'>Contains methods that perform string manipulation.</p>
 <p align="center">
-	<a href="https://github.com/wniemiec-util-data/string-utils/actions/workflows/windows.yml"><img src="https://github.com/wniemiec-util-data/string-utils/actions/workflows/windows.yml/badge.svg" alt=""></a>
-	<a href="https://github.com/wniemiec-util-data/string-utils/actions/workflows/macos.yml"><img src="https://github.com/wniemiec-util-data/string-utils/actions/workflows/macos.yml/badge.svg" alt=""></a>
-	<a href="https://github.com/wniemiec-util-data/string-utils/actions/workflows/ubuntu.yml"><img src="https://github.com/wniemiec-util-data/string-utils/actions/workflows/ubuntu.yml/badge.svg" alt=""></a>
-	<a href="https://codecov.io/gh/wniemiec-util-data/string-utils"><img src="https://codecov.io/gh/wniemiec-util-data/string-utils/branch/master/graph/badge.svg?token=R2SFS4SP86" alt="Coverage status"></a>
+	<a href="https://github.com/wniemiec-util-java/string-utils/actions/workflows/windows.yml"><img src="https://github.com/wniemiec-util-java/string-utils/actions/workflows/windows.yml/badge.svg" alt=""></a>
+	<a href="https://github.com/wniemiec-util-java/string-utils/actions/workflows/macos.yml"><img src="https://github.com/wniemiec-util-java/string-utils/actions/workflows/macos.yml/badge.svg" alt=""></a>
+	<a href="https://github.com/wniemiec-util-java/string-utils/actions/workflows/ubuntu.yml"><img src="https://github.com/wniemiec-util-java/string-utils/actions/workflows/ubuntu.yml/badge.svg" alt=""></a>
+	<a href="https://codecov.io/gh/wniemiec-util-java/string-utils"><img src="https://codecov.io/gh/wniemiec-util-java/string-utils/branch/master/graph/badge.svg?token=R2SFS4SP86" alt="Coverage status"></a>
 	<a href="http://java.oracle.com"><img src="https://img.shields.io/badge/java-11+-D0008F.svg" alt="Java compatibility"></a>
-	<a href="https://github.com/wniemiec-util-data/string-utils/releases"><img src="https://img.shields.io/github/v/release/wniemiec-util-data/string-utils" alt="Release"></a>
-	<a href="https://github.com/wniemiec-util-data/string-utils/blob/master/LICENSE"><img src="https://img.shields.io/github/license/wniemiec-util-data/string-utils" alt="License"></a>
+	<a href="https://github.com/wniemiec-util-java/string-utils/releases"><img src="https://img.shields.io/github/v/release/wniemiec-util-java/string-utils" alt="Release"></a>
+	<a href="https://github.com/wniemiec-util-java/string-utils/blob/master/LICENSE"><img src="https://img.shields.io/github/license/wniemiec-util-java/string-utils" alt="License"></a>
 </p>
 <hr />
 
@@ -20,9 +20,9 @@ Methods package that perform string manipulation.
 1. Add this to pom.xml:
 ```
 <dependency>
-  <groupId>wniemiec.util.data</groupId>
+  <groupId>wniemiec.util.java</groupId>
   <artifactId>string-utils</artifactId>
-  <version>1.0.0</version>
+  <version>LATEST</version>
 </dependency>
 ```
 
@@ -35,7 +35,7 @@ $ mvn install
 ```
 [...]
 
-import wniemiec.util.data.StringUtils;
+import wniemiec.util.java.StringUtils;
 
 [...]
 
@@ -51,10 +51,10 @@ System.out.println( StringUtils.implode(words, " ") );
 
 
 ## 🚩 Changelog
-Details about each version are documented in the [releases section](https://github.com/williamniemiec/wniemiec-util-data/string-utils/releases).
+Details about each version are documented in the [releases section](https://github.com/williamniemiec/wniemiec-util-java/string-utils/releases).
 
 ## 🤝 Contribute!
-See the documentation on how you can contribute to the project [here](https://github.com/wniemiec-util-data/string-utils/blob/master/CONTRIBUTING.md).
+See the documentation on how you can contribute to the project [here](https://github.com/wniemiec-util-java/string-utils/blob/master/CONTRIBUTING.md).
 
 ## 📁 Files
 

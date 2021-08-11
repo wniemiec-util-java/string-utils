@@ -4,13 +4,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>wniemiec.util.data</groupId>
-  <artifactId>stringutils</artifactId>
+  <groupId>wniemiec.util.java</groupId>
+  <artifactId>string-utils</artifactId>
   <version>1.0.0</version>
 
   <name>StringUtils</name>
   <description>Contains methods that perform string manipulation.</description>
-  <url>https://github.com/wniemiec-util-data/stringutils</url>
+  <url>https://github.com/wniemiec-util-java/string-utils</url>
 
   <properties>
     <version.major>1</version.major>
@@ -34,16 +34,16 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git@github.com:wniemiec-util-data/stringutils.git</connection>
-    <developerConnection>scm:git:ssh://github.com:wniemiec-util-data/stringutils.git</developerConnection>
-    <url>https://github.com/wniemiec-util-data/stringutils/tree/main</url>
+    <connection>scm:git:git@github.com:wniemiec-util-java/string-utils.git</connection>
+    <developerConnection>scm:git:ssh://github.com:wniemiec-util-java/string-utils.git</developerConnection>
+    <url>https://github.com/wniemiec-util-java/string-utils/tree/main</url>
   </scm>
 
   <distributionManagement>
     <repository>
-      <id>github-wniemiec-util-data-stringutils</id>
-      <name>GitHub wniemiec-util-data Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/wniemiec-util-data/stringutils</url>
+      <id>github-wniemiec-util-java-string-utils</id>
+      <name>GitHub wniemiec-util-java Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/wniemiec-util-java/string-utils</url>
     </repository>
   </distributionManagement>
 

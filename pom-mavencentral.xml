@@ -4,13 +4,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>io.github.wniemiec-util-data</groupId>
+  <groupId>io.github.wniemiec-util-java</groupId>
   <artifactId>string-utils</artifactId>
   <version>1.0.0</version>
 
   <name>StringUtils</name>
   <description>Contains methods that perform string manipulation.</description>
-  <url>https://github.com/wniemiec-util-data/string-utils</url>
+  <url>https://github.com/wniemiec-util-java/string-utils</url>
 
   <properties>
     <version.major>1</version.major>
@@ -34,9 +34,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git@github.com:wniemiec-util-data/string-utils.git</connection>
-    <developerConnection>scm:git:ssh://github.com:wniemiec-util-data/string-utils.git</developerConnection>
-    <url>https://github.com/wniemiec-util-data/string-utils/tree/main</url>
+    <connection>scm:git:git@github.com:wniemiec-util-java/string-utils.git</connection>
+    <developerConnection>scm:git:ssh://github.com:wniemiec-util-java/string-utils.git</developerConnection>
+    <url>https://github.com/wniemiec-util-java/string-utils/tree/main</url>
   </scm>
 
   <distributionManagement>
