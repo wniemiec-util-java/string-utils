@@ -59,7 +59,8 @@ System.out.println( StringUtils.implode(words, " ") );
 ## 📖 Documentation
 |        Property        |Type|Description|Default|
 |----------------|-------------------------------|-----------------------------|--------|
-|implode |`list: List<T>, delimiter: String: String`|Converts elements of a list into a string by separating each element with a delimiter| - |
+|implode |`(list: List<T>, delimiter: String): String`|Converts elements of a list into a string by separating each element with a delimiter| - |
+|capitalize |`(text: String): String`|Converts elements of a list into a string by separating each element with a delimiter| - |
 
 
 ## 🚩 Changelog

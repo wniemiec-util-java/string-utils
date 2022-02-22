@@ -6,8 +6,7 @@
 
   <groupId>wniemiec.util.java</groupId>
   <artifactId>string-utils</artifactId>
-  <version>1.0.0</version>
-
+  <version>1.1.0</version>
   <name>StringUtils</name>
   <description>Contains methods that perform string manipulation.</description>
   <url>https://github.com/wniemiec-util-java/string-utils</url>
@@ -49,11 +48,11 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.2</version>
-      <scope>test</scope>
-    </dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.7.0</version>
+			<scope>test</scope>
+		</dependency>
   </dependencies>
 
   <build>
@@ -141,6 +140,9 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.2.0</version>
+        <configuration>
+          <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
+        </configuration>
         <executions>
           <execution>
             <id>attach-javadocs</id>

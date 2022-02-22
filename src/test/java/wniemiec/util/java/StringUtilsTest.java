@@ -1,41 +1,71 @@
 package wniemiec.util.java;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
 import java.util.List;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
 
-public class StringUtilsTest {
+class StringUtilsTest {
 
-	@Test
-	public void testHelloWorld() {
-		List<String> items = List.of("hello", "world");
-		
-		assertEquals("hello world", StringUtils.implode(items, " "));
-	}
-	
-	@Test(expected = IllegalArgumentException.class)
-	public void testNullList() {
-		StringUtils.implode(null, " ");
-		
-		fail();
-	}
+    @Test
+    void testHelloWorld() {
+        List<String> items = List.of("hello", "world");
+        String obtained = StringUtils.implode(items, " ");
+        
+        Assertions.assertEquals("hello world", obtained);
+    }
+    
+    @Test
+    void testNullList() {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            StringUtils.implode(null, " ");
+        });
+    }
 
-	@Test(expected = IllegalArgumentException.class)
-	public void testNullDelimiter() {
-		List<String> items = List.of("hello", "world");
-		
-		StringUtils.implode(items, null);
-		
-		fail();
-	}
-	
-	@Test(expected = IllegalArgumentException.class)
-	public void testNullDelimiterAndList() {
-		StringUtils.implode(null, null);
-		
-		fail();
-	}
+    @Test
+    void testNullDelimiter() {
+        List<String> items = List.of("hello", "world");
+        
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            StringUtils.implode(items, null);
+        });
+    }
+
+    @Test
+    void testNullDelimiterAndList() {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            StringUtils.implode(null, null);
+        });
+    }
+
+    @Test
+    void testCapitalizeTextWith1Character() {
+        String text = "h";
+        String obtained = StringUtils.capitalize(text);
+
+        Assertions.assertEquals("H", obtained);
+    }
+
+    @Test
+    void testCapitalizeTextWithMoreThan1Characters() {
+        String text = "hello wOrLd";
+        String obtained = StringUtils.capitalize(text);
+
+        Assertions.assertEquals("Hello World", obtained);
+    }
+
+    @Test
+    void testCapitalizeEmptyText() {
+        String text = "";
+        String obtained = StringUtils.capitalize(text);
+
+        Assertions.assertEquals("", obtained);
+    }
+
+    @Test
+    void testCapitalizeNullText() {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            StringUtils.capitalize(null);
+        });
+    }
 }
