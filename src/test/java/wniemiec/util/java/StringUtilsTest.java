@@ -14,6 +14,14 @@ class StringUtilsTest {
         
         Assertions.assertEquals("hello world", obtained);
     }
+
+    @Test
+    void testHelloWorldEmptyDelimiter() {
+        List<String> items = List.of("hello", "world");
+        String obtained = StringUtils.implode(items, "");
+        
+        Assertions.assertEquals("helloworld", obtained);
+    }
     
     @Test
     void testNullList() {
