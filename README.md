@@ -60,7 +60,8 @@ System.out.println( StringUtils.implode(words, " ") );
 |        Property        |Type|Description|Default|
 |----------------|-------------------------------|-----------------------------|--------|
 |implode |`(list: List<T>, delimiter: String): String`|Converts elements of a list into a string by separating each element with a delimiter| - |
-|capitalize |`(text: String): String`|Converts elements of a list into a string by separating each element with a delimiter| - |
+|capitalize |`(text: String): String`|Converts the first character of a string to an uppercase letter and all other alphabets to lowercase| - |
+|capitalizeOnlyFirstLetter |`(text: String): String`|Converts the first character of a string to an uppercase letter and concatenate it with remaining letters.| - |
 
 
 ## 🚩 Changelog

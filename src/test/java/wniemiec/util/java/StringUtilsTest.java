@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class StringUtilsTest {
 
     @Test
-    void testHelloWorld() {
+    void testImplode() {
         List<String> items = List.of("hello", "world");
         String obtained = StringUtils.implode(items, " ");
         
@@ -16,14 +16,14 @@ class StringUtilsTest {
     }
     
     @Test
-    void testNullList() {
+    void testImplodeWithNullList() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             StringUtils.implode(null, " ");
         });
     }
 
     @Test
-    void testNullDelimiter() {
+    void testImplodeWithNullDelimiter() {
         List<String> items = List.of("hello", "world");
         
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
@@ -32,7 +32,7 @@ class StringUtilsTest {
     }
 
     @Test
-    void testNullDelimiterAndList() {
+    void testImplodeWithNullDelimiterAndList() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             StringUtils.implode(null, null);
         });
@@ -66,6 +66,37 @@ class StringUtilsTest {
     void testCapitalizeNullText() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             StringUtils.capitalize(null);
+        });
+    }
+
+    @Test
+    void testCapitalizeOnlyFirstLetterWithTextWith1Character() {
+        String text = "h";
+        String obtained = StringUtils.capitalizeOnlyFirstLetter(text);
+
+        Assertions.assertEquals("H", obtained);
+    }
+
+    @Test
+    void testCapitalizeOnlyFirstLetterWithTextWithMoreThan1Characters() {
+        String text = "hello wOrLd";
+        String obtained = StringUtils.capitalizeOnlyFirstLetter(text);
+
+        Assertions.assertEquals("Hello wOrLd", obtained);
+    }
+
+    @Test
+    void testCapitalizeOnlyFirstLetterWithEmptyText() {
+        String text = "";
+        String obtained = StringUtils.capitalizeOnlyFirstLetter(text);
+
+        Assertions.assertEquals("", obtained);
+    }
+
+    @Test
+    void testCapitalizeOnlyFirstLetterWithNullText() {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            StringUtils.capitalizeOnlyFirstLetter(null);
         });
     }
 }

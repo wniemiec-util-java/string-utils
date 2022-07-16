@@ -6,7 +6,7 @@
 
   <groupId>io.github.wniemiec-util-java</groupId>
   <artifactId>string-utils</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1</version>
   <name>StringUtils</name>
   <description>Contains methods that perform string manipulation.</description>
   <url>https://github.com/wniemiec-util-java/string-utils</url>
@@ -101,7 +101,7 @@
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.0.2</version>
         <configuration>
-          <outputDirectory>${project.build.directory}/../dist/${version.major}.x</outputDirectory>
+          <outputDirectory>${basedir}/dist/${version.major}.x</outputDirectory>
         </configuration>
       </plugin>
 

@@ -107,4 +107,29 @@ public class StringUtils {
             throw new IllegalArgumentException("Text cannot be null");
         }
     }
+
+    /**
+     * Converts the first character of a string to an uppercase letter and 
+     * concatenate it with remaining letters.
+     * 
+     * @param		text Text to be capitalized
+     * 
+     * @return		Capitalized text
+     */
+    public static String capitalizeOnlyFirstLetter(String text) {
+        validateCapitalizeArg(text);
+
+        if (text.isEmpty()) {
+            return text;
+        }
+
+        if (text.length() == 1) {
+            return text.toUpperCase();
+        }
+
+        String firstCharacter = text.substring(0, 1);
+        String remainingText = text.substring(1);
+
+        return firstCharacter.toUpperCase() + remainingText;
+    }
 }
