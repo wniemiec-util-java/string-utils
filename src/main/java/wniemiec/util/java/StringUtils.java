@@ -44,7 +44,9 @@ public class StringUtils {
             response.append(delimiter);
         }
         
-        removeLastCharacter(response);
+        if (!delimiter.isEmpty()) {
+            removeLastCharacter(response);
+        }
         
         return response.toString();
     }
